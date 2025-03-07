@@ -1,0 +1,47 @@
+{
+    "name": "Cubesat v2.2",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "OLED12864_I2C": "github:makecode-extensions/oled12864_i2c#127c10de32c07df9d274b4ba3594ffef4c2785e1",
+        "microphone": "*",
+        "Environment-and-Science-IoT": "github:tinkertanker/pxt-iot-environment-kit#v5.2.3",
+        "datalogger": "*",
+        "DFRobot_PM2.5_Air_Quality_Sensor": "github:tangjie133/pxt-DFRobot_PM25_Air_Quality_Sensor#v0.0.5",
+        "BME280": "github:makecode-extensions/bme280#v1.1.0",
+        "robotbit": "github:kittenbot/pxt-robotbit#v0.4.6"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v2.0.17",
+        "tag": "v2.0.17",
+        "commits": "https://github.com/microsoft/pxt-microbit/commits/f2fa2d74d5c9b81c3e5df4974bb6fe3f9900c901",
+        "target": "7.0.57",
+        "pxt": "5.15.19",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
+}
